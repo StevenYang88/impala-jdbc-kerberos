@@ -14,6 +14,10 @@ To run this, do the following:
 - Make sure you are using oracle's JDK in your path.
 - Compile the project with Maven3
   mvn clean install
+  
+  --------------------------Impala case---------------------------
 - /usr/java/default/bin/java -cp target/hiveserver2-jdbc-1.0-jar-with-dependencies.jar  com.test.ImpalaJDBC "jdbc:hive2://impala-host:21050/;principal=impala/test.com@TEST.COM" /etc/krb5.conf
-
 Notice that we are using local principal "hdfs@TEST.COM" to connect to impala using service principal impala/test.com@TEST.COM
+  --------------------------Hive2 case----------------------------
+- /usr/java/default/bin/java -cp target/hiveserver2-jdbc-1.0-jar-with-dependencies.jar  com.test.ImpalaJDBC "jdbc:hive2://hive2-host:10000/;principal=hive/test.com@TEST.COM" /etc/krb5.conf
+Notice that we are using local principal "hive/test.com@TEST.COM" to connect to hive2 using service principal hive/test.com@TEST.COM
