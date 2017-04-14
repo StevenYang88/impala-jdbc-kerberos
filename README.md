@@ -1,4 +1,7 @@
-Based on https://github.com/cmconner156/hiveserver2-jdbc-kerberos, modified to connect to Cloudera Impala CDH4.5.0 secure cluster.
+Based on https://github.com/isemenko/impala-jdbc-kerberos, modified to connect to Cloudera Impala CDH5.10.0 secure cluster.
+
+
+/***************Copy description from base***************/
 
 To run this, do the following:
 
